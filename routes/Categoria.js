@@ -10,10 +10,10 @@ const {
   deleteCategoria
 } = require('../controllers/Categoria');
 
-routerCategoria.post('/productos', create);
-routerCategoria.get('/productos', getCategorias);
-routerCategoria.get('/productos/:id', getCategoriaById);
-routerCategoria.put('/productos/:id', updateCategoria);
-routerCategoria.delete('/productos/:id', deleteCategoria);
+routerCategoria.post('/categorias', create);
+routerCategoria.get('/categorias', getCategorias);
+routerCategoria.get('/categorias/:id', getCategoriaById);
+routerCategoria.put('/categorias/:id', updateCategoria);
+routerCategoria.delete('/categorias/:id', deleteCategoria);
 
 module.exports = routerCategoria;

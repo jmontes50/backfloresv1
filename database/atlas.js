@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const BD_URI = "mongodb+srv://admin:admin@clustertiendaapp.cvle1.mongodb.net/tiendadb?retryWrites=true&w=majority";
+const BD_URI = "mongodb+srv://userb43:potato@clustertiendaapp.cvle1.mongodb.net/tiendadb?retryWrites=true&w=majority";
 
 mongoose.connect(BD_URI, 
                 {useNewUrlParser:true, useUnifiedTopology:true}, 
