@@ -44,14 +44,17 @@ module.exports = {
     }
   },
   updateProducto: async (req, res) => {
+    console.log(req.params.id);
     try {
       const producto = await productoService.getProductoById(req.params.id)
+      // console.log({producto});
       const productoModificado = await productoService.updateProducto(producto, req.body)
       res.status(200).send({
         ok:true,
         content:productoModificado
       })
     } catch(error) {
+      console.log(error);
       res.status(404).send({
         ok:false,
         content:error

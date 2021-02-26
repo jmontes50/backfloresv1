@@ -12,7 +12,8 @@ module.exports = {
     return Producto.findById(id);
   },
   updateProducto: (producto, body) => {
-    let productoActualizado = {...producto, ...body};
+    let productoActualizado = new Producto({...producto, ...body})
+    console.log({productoActualizado});
     return productoActualizado.save();
   }
 }
